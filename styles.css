@@ -1,0 +1,313 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  /* Fundo escuro */
+    color: #e0e0e0;  /* Texto claro */
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffa726;  /* Cor de destaque laranja */
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #9e9e9e;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilo para a seção de destaques */
+.destaques {
+    text-align: center;
+}
+
+.destaques h1 {
+    color: #ffa726;
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.destaques .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.destaques .post {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.destaques .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.destaques .post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.destaques .post h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #ffa726;
+}
+
+.destaques .post h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.destaques .post h2 a:hover {
+    text-decoration: underline;
+}
+
+.destaques .post p {
+    font-size: 14px;
+    color: #b0bec5;
+    margin-top: 10px;
+}
+
+/* Estilo para as postagens individuais */
+.postagem img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.postagem p {
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #e0e0e0;
+}
+
+.postagem form {
+    margin-top: 30px;
+}
+
+.postagem textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #ffa726;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.postagem button {
+    background-color: #ffa726;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.postagem button:hover {
+    background-color: #ff9800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaques .posts {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Estilo para a página de postagem individual */
+.postagem {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.postagem h1 {
+    color: #ffa726;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.postagem h2 {
+    color: #b0bec5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.postagem img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.postagem p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.postagem blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #2a2a2a;
+    border-left: 5px solid #ffa726;
+    font-style: italic;
+    color: #b0bec5;
+}
+
+.postagem ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.postagem ul li {
+    list-style: square;
+    margin-bottom: 10px;
+    color: #b0bec5;
+}
+
+/* Estilo para a seção de comentários */
+.comentarios {
+    margin-top: 40px;
+}
+
+.comentarios h3 {
+    color: #ffa726;
+    margin-bottom: 20px;
+}
+
+.comentarios form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #ffa726;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.comentarios form button {
+    background-color: #ffa726;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comentarios form button:hover {
+    background-color: #ff9800;
+}
+.sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sobre h1 {
+    color: #ffa726;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.sobre ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.sobre ul li {
+    list-style: square;
+    margin-bottom: 10px;
+    color: #b0bec5;
+}
+
+.sobre form input,
+.sobre form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #ffa726;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.sobre form button {
+    background-color: #ffa726;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sobre form button:hover {
+    background-color: #ff9800;
+}
