@@ -4,71 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magnus Carlsen - Blog</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-[#121212] text-[#e0e0e0] font-sans">
 
     <!-- Menu -->
-    <header>
+    <header class="bg-[#1e1e1e] py-4">
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
+            <ul class="flex justify-center space-x-8">
+                <li><a href="../index.html" class="text-white text-lg hover:text-[#ffa726] transition-colors">Início</a></li>
+                <li><a href="../sobre.html" class="text-white text-lg hover:text-[#ffa726] transition-colors">Sobre</a></li>
+            </ul>            
         </nav>
     </header>
 
     <!-- Postagem -->
-    <main>
-        <section class="postagem">
-            <h1>Magnus Carlsen</h1>
-            <img src="../assets/Magnus_Carlsen-01.png" alt="Magnus Carlsen" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 20px auto; border-radius: 8px;">
+    <main class="p-6">
+        <section class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg mt-8 max-w-4xl mx-auto">
+            <h1 class="text-[#ffa726] text-4xl text-center mb-6">Magnus Carlsen</h1>
+            <img src="../assets/Magnus_Carlsen-01.png" alt="Magnus Carlsen" class="w-full max-w-[500px] mx-auto mb-6 rounded-md">
 
-            <p>
-                Até os 8 anos de idade, Magnus Carlsen se interessava muito por futebol e começou a praticar sky jumping. Seu maior feito no xadrez 
-                foi ter derrotado sua irmã mais velha. Aos 10 anos, participou do seu primeiro torneio contra juniores experientes da Noruega, obtendo 
-                3,5 pontos em 5 possíveis.
+            <p class="text-[#b0bec5] mb-4 leading-relaxed">
+                Até os 8 anos de idade, Magnus Carlsen se interessava muito por futebol e começou a praticar sky jumping. Seu maior feito no xadrez foi ter derrotado sua irmã mais velha. Aos 10 anos, participou do seu primeiro torneio contra juniores experientes da Noruega, obtendo 3,5 pontos em 5 possíveis.
             </p>
-            <p>
-                Aos 11 e 12 anos, começou a estudar com o Grande Mestre Simen Agdestein e fez uma turnê preparatória pela Europa. Aos 13 anos, tornou-se 
-                Mestre Internacional de Xadrez em 20 de agosto de 2003. Antes de completar 14 anos, em 2004, tornou-se o mais jovem Grande Mestre de Xadrez 
-                até aquele momento. Ainda nesse ano, o jornal Washington Post o chamou de "Mozart do xadrez".
+            <p class="text-[#b0bec5] mb-4 leading-relaxed">
+                Aos 11 e 12 anos, começou a estudar com o Grande Mestre Simen Agdestein e fez uma turnê preparatória pela Europa. Aos 13 anos, tornou-se Mestre Internacional de Xadrez em 20 de agosto de 2003. Antes de completar 14 anos, em 2004, tornou-se o mais jovem Grande Mestre de Xadrez até aquele momento. Ainda nesse ano, o jornal Washington Post o chamou de "Mozart do xadrez".
             </p>
-            <p>
-                Aos 17 anos, alcançou a semifinal da World Chess Cup. Aos 18, empatou na primeira colocação do torneio Corus A, deixando para trás Viswanathan Anand 
-                e Vladimir Kramnik. Aos 19 anos, em 2009, treinou por um ano com Garry Kasparov, quando alcançou uma "performance rating" de aproximadamente 3000 pontos, 
-                ao vencer o torneio de Nanjing com 8 pontos em 10 possíveis.
+            <p class="text-[#b0bec5] mb-4 leading-relaxed">
+                Aos 17 anos, alcançou a semifinal da World Chess Cup. Aos 18, empatou na primeira colocação do torneio Corus A, deixando para trás Viswanathan Anand e Vladimir Kramnik. Aos 19 anos, em 2009, treinou por um ano com Garry Kasparov, quando alcançou uma "performance rating" de aproximadamente 3000 pontos, ao vencer o torneio de Nanjing com 8 pontos em 10 possíveis.
             </p>
-            <p>
-                No torneio magistral de Londres, em dezembro de 2009, Carlsen venceu com um ponto a mais que o russo Vladimir Kramnik, tornando-se o mais jovem número um 
-                no ranking mundial da história da FIDE. Aos 20 anos, já era o primeiro do ranking há mais de um ano.
+            <p class="text-[#b0bec5] mb-4 leading-relaxed">
+                No torneio magistral de Londres, em dezembro de 2009, Carlsen venceu com um ponto a mais que o russo Vladimir Kramnik, tornando-se o mais jovem número um no ranking mundial da história da FIDE. Aos 20 anos, já era o primeiro do ranking há mais de um ano.
             </p>
-            <p>
-                Aos 22 anos, ganhou pela terceira vez o London Chess Championship. Aos 23 anos, em 2013, tornou-se campeão mundial ao derrotar o então campeão Viswanathan 
-                Anand e venceu o torneio de Chennai. Aos 24 anos, defendeu seu título contra Anand e tornou-se o primeiro campeão com a tríplice coroa, vencendo o mundial de 
-                xadrez blitz e o de xadrez rápido.
+            <p class="text-[#b0bec5] mb-4 leading-relaxed">
+                Aos 22 anos, ganhou pela terceira vez o London Chess Championship. Aos 23 anos, em 2013, tornou-se campeão mundial ao derrotar o então campeão Viswanathan Anand e venceu o torneio de Chennai. Aos 24 anos, defendeu seu título contra Anand e tornou-se o primeiro campeão com a tríplice coroa, vencendo o mundial de xadrez blitz e o de xadrez rápido.
             </p>
-            <p>
-                Em 2016, aos 26 anos, Magnus Carlsen manteve o título de campeão mundial ao derrotar Sergey Karjakin por 9 a 7. Em 2018, manteve o título de campeão de xadrez 
-                clássico contra Fabiano Caruana, vencendo no tie-break. Em 2019, repetiu o feito de 2014, tornando-se novamente campeão mundial nas três modalidades (Clássico, 
-                Rápido e Blitz).
+            <p class="text-[#b0bec5] mb-6 leading-relaxed">
+                Em 2016, aos 26 anos, Magnus Carlsen manteve o título de campeão mundial ao derrotar Sergey Karjakin por 9 a 7. Em 2018, manteve o título de campeão de xadrez clássico contra Fabiano Caruana, vencendo no tie-break. Em 2019, repetiu o feito de 2014, tornando-se novamente campeão mundial nas três modalidades (Clássico, Rápido e Blitz).
             </p>
-            <p>
-                Garry Kasparov descreveu Magnus Carlsen como uma mistura de Harry Potter com José Raúl Capablanca e Anatoly Karpov. Magnus afirma que não se baseia em um jogador específico, 
-                mas analisa o jogo de todos e se deixa levar pela intuição.
+            <p class="text-[#b0bec5] mb-6 leading-relaxed">
+                Garry Kasparov descreveu Magnus Carlsen como uma mistura de Harry Potter com José Raúl Capablanca e Anatoly Karpov. Magnus afirma que não se baseia em um jogador específico, mas analisa o jogo de todos e se deixa levar pela intuição.
             </p>
 
             <!-- Formulário de Comentários -->
-            <h3>Comentários</h3>
-            <form action="#">
-                <textarea placeholder="Deixe seu comentário"></textarea>
-                <button type="submit">Enviar</button>
+            <h3 class="text-[#ffa726] text-2xl mb-4">Comentários</h3>
+            <form action="#" class="bg-[#1e1e1e] p-4 rounded-lg shadow-md">
+                <textarea class="w-full p-4 bg-transparent border border-[#ffa726] rounded-lg text-[#e0e0e0] mb-4" placeholder="Deixe seu comentário"></textarea>
+                <button type="submit" class="bg-[#ffa726] text-[#121212] px-6 py-2 rounded-lg transition hover:bg-[#ff9800]">Enviar</button>
             </form>
         </section>
     </main>
 
     <!-- Rodapé -->
-    <footer>
+    <footer class="bg-[#1e1e1e] p-4 text-center text-[#b0bec5] mt-8">
         <p>&copy; 2025 Blog - Todos os direitos reservados.</p>
     </footer>
 

@@ -4,99 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Grandes Jogadores de Xadrez</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fundo: '#121212',
+                        texto: '#e0e0e0',
+                        cabecalho: '#1e1e1e',
+                        destaque: '#ffa726',
+                        destaqueEscuro: '#ff9800',
+                        textoSecundario: '#b0bec5',
+                        borda: '#2a2a2a'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-
+<body class="bg-fundo text-texto">
     <!-- Menu -->
-    <header>
+    <header class="bg-cabecalho py-4">
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="index.html" class="text-white hover:text-destaque transition">Início</a></li>
+                <li><a href="sobre.html" class="text-white hover:text-destaque transition">Sobre</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Corpo Principal -->
-    <main>
-        <section class="destaques">
-            <h1>Grandes Jogadores de Xadrez</h1>
-            <div class="posts">
-                <!-- Postagem 1 -->
-                <article class="post">
-                    <img src="assets/Magnus_Carlsen-01.png" alt="Magnus Carlsen">
-                    <h2><a href="./postagens/postagem1.html">Magnus Carlsen</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Magnus_Carlsen">Wikipedia</a></h2>
-                    <p>Atual campeão mundial, Carlsen é considerado um dos maiores gênios do xadrez, combinando tática e estratégia de forma brilhante.</p>
+    <main class="p-6">
+        <section class="destaques text-center">
+            <h1 class="text-destaque text-3xl font-bold mb-6">Grandes Jogadores de Xadrez</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Postagens -->
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Magnus_Carlsen-01.png" alt="Magnus Carlsen" class="w-full rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem1.html" class="hover:underline">Magnus Carlsen</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Magnus_Carlsen" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Atual campeão mundial, Carlsen é considerado um dos maiores gênios do xadrez.</p>
                 </article>
+                
                 <!-- Postagem 2 -->
-                <article class="post">
-                    <img src="assets/Garry_Kasparov-02.png" alt="Garry Kasparov">
-                    <h2><a href="./postagens/postagem2.html">Garry Kasparov</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov">wikipedia</a></h2>
-                    <p>Kasparov foi campeão mundial por 15 anos e é famoso por seu estilo agressivo e por enfrentar o supercomputador Deep Blue.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Garry_Kasparov-02.png" alt="Garry Kasparov" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem2.html" class="hover:underline">Garry Kasparov</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Garry_Kasparov" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Kasparov foi campeão mundial por 15 anos e é famoso por seu estilo agressivo e por enfrentar o supercomputador Deep Blue.</p>
                 </article>
+
                 <!-- Postagem 3 -->
-                <article class="post">
-                    <img src="assets/Anatoly_Karpov-03.png" alt="Anatoly Karpov">
-                    <h2><a href="./postagens/postagem3.html">Anatoly Karpov</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov">Wikipedia</a></h2>
-                    <p>Conhecido por seu estilo posicional e preciso, Karpov foi campeão mundial por uma década, enfrentando rivais lendários.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Anatoly_Karpov-03.png" alt="Anatoly Karpov" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem3.html" class="hover:underline">Anatoly Karpov</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Anatoly_Karpov" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Conhecido por seu estilo posicional e preciso, Karpov foi campeão mundial por uma década, enfrentando rivais lendários.</p>
                 </article>
+
                 <!-- Postagem 4 -->
-                <article class="post">
-                    <img src="assets/Bobby_Fischer-04.png" alt="Bobby Fischer">
-                    <h2><a href="./postagens/postagem4.html">Bobby Fischer</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Bobby_Fischer">Wikipedia</a></h2>
-                    <p>O gênio americano que revolucionou o xadrez, Fischer foi o primeiro campeão mundial dos EUA, conhecido por seu foco e determinação.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Bobby_Fischer-04.png" alt="Bobby Fischer" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem4.html" class="hover:underline">Bobby Fischer</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Bobby_Fischer" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">O gênio americano que revolucionou o xadrez, Fischer foi o primeiro campeão mundial dos EUA, conhecido por seu foco e determinação.</p>
                 </article>
+
                 <!-- Postagem 5 -->
-                <article class="post">
-                    <img src="assets/Jose_Raul_Capablanca-05.png" alt="José Raúl Capablanca">
-                    <h2><a href="./postagens/postagem5.html">José Raúl Capablanca</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca">Wikipedia</a></h2>
-                    <p>Capablanca era famoso por sua habilidade em finais e seu estilo claro e eficiente no tabuleiro.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Jose_Raul_Capablanca-05.png" alt="José Raúl Capablanca" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem5.html" class="hover:underline">José Raúl Capablanca</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Capablanca era famoso por sua habilidade em finais e seu estilo claro e eficiente no tabuleiro.</p>
                 </article>
+
                 <!-- Postagem 6 -->
-                <article class="post">
-                    <img src="assets/Mikhail_Botvinnik-06.png" alt="Mikhail Botvinnik">
-                    <h2><a href="./postagens/postagem6.html">Mikhail Botvinnik</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik">Wikipedia</a></h2>
-                    <p>Pioneiro do xadrez soviético, Botvinnik foi um mentor de várias gerações de campeões mundiais.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Mikhail_Botvinnik-06.png" alt="Mikhail Botvinnik" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem6.html" class="hover:underline">Mikhail Botvinnik</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Mikhail_Botvinnik" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Pioneiro do xadrez soviético, Botvinnik foi um mentor de várias gerações de campeões mundiais.</p>
                 </article>
+
                 <!-- Postagem 7 -->
-                <article class="post">
-                    <img src="assets/Alexander_Alekhine-07.png" alt="Alexander Alekhine">
-                    <h2><a href="./postagens/postagem7.html">Alexander Alekhine</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine">Wikipedia</a></h2>
-                    <p>Alekhine foi conhecido por sua criatividade tática e ataques combinatórios brilhantes.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Alexander_Alekhine-07.png" alt="Alexander Alekhine" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem7.html" class="hover:underline">Alexander Alekhine</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Alexander_Alekhine" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Alekhine foi conhecido por sua criatividade tática e ataques combinatórios brilhantes.</p>
                 </article>
+
                 <!-- Postagem 8 -->
-                <article class="post">
-                    <img src="assets/Vladimir_Kramnik-08.png" alt="Vladimir Kramnik">
-                    <h2><a href="./postagens/postagem8.html">Vladimir Kramnik</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik">Wikipedia</a></h2>
-                    <p>Kramnik destronou Kasparov e trouxe inovações ao xadrez moderno, especialmente na defesa de Berlim.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Vladimir_Kramnik-08.png" alt="Vladimir Kramnik" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem8.html" class="hover:underline">Vladimir Kramnik</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Vladimir_Kramnik" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Kramnik destronou Kasparov e trouxe inovações ao xadrez moderno, especialmente na defesa de Berlim.</p>
                 </article>
+
                 <!-- Postagem 9 -->
-                <article class="post">
-                    <img src="assets/Viswanathan_Anand-09.png" alt="Viswanathan Anand">
-                    <h2><a href="./postagens/postagem9.html">Viswanathan Anand</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand">Wikipedia</a></h2>
-                    <p>Anand foi o primeiro campeão mundial da Índia, conhecido por sua versatilidade e rapidez no xadrez rápido.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Viswanathan_Anand-09.png" alt="Viswanathan Anand" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem9.html" class="hover:underline">Viswanathan Anand</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Viswanathan_Anand" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Anand foi o primeiro campeão mundial da Índia, conhecido por sua versatilidade e rapidez no xadrez rápido.</p>
                 </article>
+
                 <!-- Postagem 10 -->
-                <article class="post">
-                    <img src="assets/Paul_Morphy-10.png" alt="Paul Morphy">
-                    <h2><a href="./postagens/postagem10.html">Paul Morphy</a></h2>
-                    <h2><a href="https://pt.wikipedia.org/wiki/Paul_Morphy">Wikipedia</a></h2>
-                    <p>Morphy é considerado o primeiro grande gênio do xadrez, brilhando no século XIX com partidas memoráveis.</p>
+                <article class="bg-cabecalho p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="assets/Paul_Morphy-10.png" alt="Paul Morphy" class="w-full h-64 object-cover rounded-md mb-4">
+                    <h2 class="text-destaque text-xl font-semibold"><a href="./postagens/postagem10.html" class="hover:underline">Paul Morphy</a></h2>
+                    <h2><a href="https://pt.wikipedia.org/wiki/Paul_Morphy" class="text-textoSecundario hover:text-destaque transition">Wikipedia</a></h2>
+                    <p class="text-textoSecundario mt-2">Morphy é considerado o primeiro grande gênio do xadrez, brilhando no século XIX com partidas memoráveis.</p>
                 </article>
+
+                
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="bg-cabecalho text-textoSecundario text-center p-4 mt-6">
         <p>&copy; 2025 Blog - Todos os direitos reservados.</p>
     </footer>
 </body>
